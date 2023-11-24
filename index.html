@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bot Dashboard</title>
+</head>
+<body>
+  <div class="header">
+      <img src="assets/C_5.png" alt="Logo"> <!-- Replace "assets/logo.png" with the path to your logo image -->
+    <h1>Ence</h1>
+     <dic class="upgrade-button">
+        <button class="premium-button">
+            <img src="assets/Premium.png" alt="Upgrade Icon"> <!-- Replace "assets/upgrade-icon.png" with the path to your upgrade icon/image -->
+            Upgrade to Premium
+        </button>
+    </div>
+  </div>
+  
+    <div class="container">
+        <div class="sidebar">
+            <div class="module" data-target="premium">
+                <img src="assets/Premium.png" alt="module 1">
+                <span>Premium</span>
+            </div>
+            <div class="module" data-target="home">
+                <img src="assets/Home.png" alt="Module 2">
+                <span>Home</span>
+            </div>
+
+            <div class="module" data-target="moderation">
+                <img src="assets/Moderation.png" alt="Module 3">
+                <span>Moderation</span>
+            </div>
+
+            <style>
+                .module {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .module span {
+                    margin-right: 60px; /* Adjust the spacing as needed */
+                }
+            </style>
+          
+            <div class="module" data-target="modmail">
+                <img src="assets/Modmail (2).png" alt="Modmail (2) Logo">
+                <span>Modmail</span>
+                <img src="assets/Premium Module.png" alt="Premium Module Logo">
+            </div>
+
+            <div class="module" data-target="ticket">
+                <img src="assets/Ticket.png" alt="Module 4">
+                <span>Tickets</span>
+            </div>
+
+            <div class="module" data-target="verification">
+                <img src="assets/Verification.png" alt="Module 5">
+                <span>Verification</span>
+            </div>
+
+            <div class="module" data-target="auto-role">
+                <img src="assets/Autorole.png" alt="Module 6">
+                <span>Autorole</span>
+            <img src="assets/Premium Module.png" alt="Premium Module Logo">
+            </div>
+
+            <div class="module" data-target="giveaways">
+                <img src="assets/Giveaway.png" alt="Module 7">
+                <span>Giveaways</span>
+            </div>
+
+          <!-- Support button with text and logo -->
+          <button class="module support-button" data-target="support">
+              <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="Support Image">
+              <span>Support</span>
+          </button>
+
+            <!-- Add more modules as needed -->
+        </div>
+
+        <div class="content">
+            <div id="premium-content" class="module-content premium-content">
+                <div class="premium-header">
+                    <h2>Make your server better</h2>
+                    <p class="slogan">Unlock more features that Ence has to offer with a premium subscription</p>
+                </div>
+
+                <div class="plans-container">
+                    <div class="plan-card">
+                        <h3>Silver</h3>
+                        <p class="price">$3.00/month</p>
+                        <p class="billing-info">USD | Paid monthly</p>
+                        <ul>
+                            <li>Access to our premium plugins & features</li>
+                            <li>Fully refundable for 7 days</li>
+                            <li>Transferable to your other Discord servers</li>
+                        </ul>
+                        <button class="buy-now-button">Select</button>
+                    </div>
+
+                    <div class="plan-card">
+                        <h3>Gold</h3>
+                        <p class="price">$8.00/month</p>
+                        <p class="billing-info">USD | Paid monthly</p>
+                        <ul>
+                            <li>Access to our premium plugins & features</li>
+                            <li>Fully refundable for 7 days</li>
+                            <li>Transferable to your other Discord servers</li>
+                        </ul>
+                        <button class="buy-now-button">Select</button>
+                    </div>
+
+                    <div class="plan-card">
+                        <h3>Platinum</h3>
+                        <p class="price">$15.00/month</p>
+                        <p class="billing-info">USD | Paid monthly</p>
+                        <ul>
+                            <li>Access to our premium plugins & features</li>
+                            <li>Fully refundable for 7 days</li>
+                            <li>Transferable to your other Discord servers</li>
+                        </ul>
+                        <button class="buy-now-button">Select</button>
+                    </div>
+                </div>
+
+                <div class="plans-comparison">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Server Management</th>
+                                <th>Free</th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Anti-Link</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Modmail</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Music</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Polls</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Prefix</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+
+
+          <div id="home-content" class="module-content">
+              <h2>Welcome to Your Dashboard Home</h2>
+              <p>This is the Home module of your Ence Dashboard. Here, you can customize and showcase important information or features tailored to your needs.</p>
+
+              <h3>Key Features:</h3>
+              <ul>
+                  <li>Quick access to essential tools</li>
+                  <li>Personalized widgets and information</li>
+                  <li>Customizable layout for your convenience</li>
+              </ul>
+
+              <h3>Upcoming Events:</h3>
+              <p>Stay tuned for exciting updates and events on your dashboard. We are constantly working to enhance your experience.</p>
+
+              <h3>Tips:</h3>
+              <p>Explore other modules in the sidebar for specific functionalities such as Premium, Moderation, and Modmail.</p>
+          </div>
+
+      <div id="moderation-commands" class="module-content">
+          <!-- Command Embeds -->
+          <div class="command-embed">
+              <h2>Ban Command</h2>
+              <p>Description: Ban a user from the server.</p>
+              <p>Usage: <code>!ban &lt;user&gt; &lt;reason&gt;</code></p>
+              <p>Example: <code>!ban @username Breaking server rules</code></p>
+          </div>
+
+          <div class="command-embed">
+              <h2>Kick Command</h2>
+              <p>Description: Kick a user from the server.</p>
+              <p>Usage: <code>!kick &lt;user&gt; &lt;reason&gt;</code></p>
+              <p>Example: <code>!kick @username Disruptive behavior</code></p>
+          </div>
+
+          <div class="command-embed">
+              <h2>Kick Command</h2>
+              <p>Description: Kick a user from the server.</p>
+              <p>Usage: <code>!kick &lt;user&gt; &lt;reason&gt;</code></p>
+              <p>Example: <code>!kick @username Disruptive behavior</code></p>
+          </div>
+
+          <!-- Add more command embeds as needed -->
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
